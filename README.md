@@ -53,6 +53,10 @@ python3 -m http.server 8934
   - Python 내장 모듈(`python3 -m http.server`)로 로컬 서버를 띄운 뒤
   - Chrome 브라우저 자동화(Claude in Chrome)로 실제 화면에서 동작(트리 조작, YAML 실시간 생성, 복사 등)을 직접 클릭·입력해 확인
 
+## 라이선스
+
+[MIT](LICENSE)
+
 ## 더 알아보기
 
 - 상세 요구사항: [`docs/PRD.md`](docs/PRD.md)
