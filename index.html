@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K8s Manifest Builder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <div class="topbar">
+    <div class="brand">K8s Manifest Builder</div>
+    <div class="field-group">
+      <label for="clusterVersion">클러스터 버전</label>
+      <select id="clusterVersion">
+        <option>v1.31</option>
+        <option>v1.30</option>
+        <option>v1.29</option>
+        <option>v1.28</option>
+        <option>v1.27</option>
+      </select>
+    </div>
+    <div class="field-group">
+      <label for="namespaceInput">네임스페이스</label>
+      <input type="text" id="namespaceInput" placeholder="default">
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="col sidebar">
+      <div class="sidebar-head">
+        <div class="title">정렬 기준</div>
+        <select id="sortSelect">
+          <option value="freq">사용 빈도순</option>
+          <option value="name">이름순</option>
+        </select>
+      </div>
+      <div class="obj-list" id="objList"></div>
+    </div>
+
+    <div class="col tree-panel">
+      <div class="tree-head">
+        <h2 id="objTitle"></h2>
+        <div class="obj-desc" id="objDesc"></div>
+        <div id="scopeNote"></div>
+      </div>
+      <div class="tree-actions">
+        <button type="button" id="expandAllBtn">모두 펼치기</button>
+        <button type="button" id="collapseAllBtn">모두 접기</button>
+      </div>
+      <div id="treeRoot"></div>
+    </div>
+
+    <div class="col yaml-panel">
+      <div class="yaml-head">
+        <span class="yaml-filename" id="yamlFileName"></span>
+        <button type="button" class="copy-btn" id="copyBtn">복사</button>
+      </div>
+      <div class="yaml-body"><pre id="yamlOutput"></pre></div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
