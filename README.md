@@ -14,6 +14,11 @@
 
 ## 시작하기
 
+리파지터리 클론
+```bash
+git clone https://github.com/choochangho/k8s-manifest-builder.git
+```
+
 별도 설치가 필요 없습니다. 아래 중 편한 방법으로 `index.html`을 브라우저에서 열면 됩니다.
 
 ```bash
@@ -22,7 +27,10 @@ open index.html
 
 # 방법 2: 로컬 서버로 띄우기
 python3 -m http.server 8934
-# 이후 브라우저에서 http://localhost:8934/index.html 접속
+
+# 방법 3: 추천
+# 브라우저에서 k8s-manifest-builder 디렉토리의 index.html 파일을 열기
+# 이후 브라우저에서 확인
 ```
 
 ## 사용 방법
