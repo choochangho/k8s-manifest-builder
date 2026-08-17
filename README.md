@@ -2,6 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+**배포된 페이지**: https://k8s-manifest-builder.vercel.app
+
 쿠버네티스 매니페스트(YAML)를 작성할 때 공식 API 문서를 오가지 않아도 되도록 도와주는 단일 페이지 도구입니다.
 
 오브젝트를 선택하면 속성이 트리 구조로 나타나고, 각 필드마다 **필수/권장/선택** 여부와 의미 설명을 바로 보여주며, 값을 입력하는 즉시 오른쪽에 완성된 YAML이 실시간으로 만들어집니다.
